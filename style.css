@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    background-color: #121212; /* Темный фон */
+    color: #fff; /* Белый текст */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Занимает всю высоту экрана */
+}
+
+.container {
+    background-color: #1e1e1e; /* Более светлый темный фон для контейнера */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Общая тень */
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover; /* Обрезает изображение до нужной формы */
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Расстояние между кнопками */
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c; /* Цвет кнопок */
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Анимация */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Тень кнопки */
+}
+
+.button:hover {
+    background-color: #3f3f3f; /* Цвет при наведении */
+    transform: translateY(-2px); /* Подъем кнопки */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Тень при наведении */
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: invert(0) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Инвертирует цвет иконки в белый и добавляет тень */
+}
+
+/* Цвета для разных социальных сетей (необязательно, но может быть полезно) */
+.telegram { background-color: #2AABEE; }
+.twitch { background-color: #9146FF; }
+.vk { background-color: #4680C2; }
+.instagram { background-color: #E4405F; } /*  Помните, что градиенты сложнее, их лучше реализовать через img как фон*/
